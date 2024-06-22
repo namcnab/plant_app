@@ -1,7 +1,16 @@
+import { Container, Box } from "@mui/material";
+
 export default function Home() {
   return (
     <>
-      <h1>Home Page</h1>
+      <Container maxWidth="xl">
+        <Box sx={{ height: "75vh", m: 2 }}>
+          <img
+            src={require("../../src/assets/images/home_page_header.png")}
+            alt="placeholder image"
+          />
+        </Box>
+      </Container>
     </>
   );
 }
