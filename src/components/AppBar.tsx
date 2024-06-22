@@ -37,6 +37,7 @@ function ResponsiveAppBar() {
   const gotToNewPage = (page) => {
     navigate("/" + page);
   };
+
   return (
     <ThemeProvider theme={customTheme}>
       <AppBar position="static" color={"secondary"}>
