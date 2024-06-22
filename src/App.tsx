@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import { Glossary, Home, PlantCare } from "@pages/index";
+import { ResponsiveAppBar } from "@components/index";
+import { CustomContext } from "contexts/titleContext";
 
 function App() {
+  function StateProvider({ children }) {
+    const [title, setTitle] = useState("");
+
+    return (
+      <CustomContext.Provider value={{ title, setTitle }}>
+        {children}
+      </CustomContext.Provider>
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StateProvider>
+      <BrowserRouter>
+        <ResponsiveAppBar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/glossary" element={<Glossary />}></Route>
+          <Route path="/care" element={<PlantCare />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </StateProvider>
   );
 }
 
