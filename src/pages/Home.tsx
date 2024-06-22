@@ -1,14 +1,5 @@
-import {
-  Container,
-  Box,
-  Grid,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
+import PlantCard from "@components/PlantCard";
+import { Container, Box, Grid } from "@mui/material";
 
 import data from "config/data.json";
 
@@ -27,28 +18,7 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid container justifyContent="center">
-          {data.data.map((item) => (
-            <Grid item xs={3} sx={{ m: 2 }}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  sx={{ height: 250 }}
-                  image={require("assets/images/plants/" + item.img)}
-                  title="green monstera plant"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {item.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {item.description}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          ))}
+          <PlantCard plants={data} />
         </Grid>
       </Container>
     </>
