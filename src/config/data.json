@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "Monstera",
+      "img": "monstera.jpg",
+      "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama."
+    },
+    {
+      "name": "Philodendron Tree",
+      "img": "philodendron_tree.png",
+      "description": "The tree philodendron (Philodendron bipinnatifidum) is a semi-woody shrub with a tree-like structure and large, glossy leaves."
+    },
+    {
+      "name": "Euphorbia Trigona",
+      "img": "euphorbia_trigona.png",
+      "description": "Euphorbia trigona, also known as the African Milk Tree or Good Luck Plant, is a slow-growing, branching succulent shrub that can grow up to 6 ft tall and 2 ft wide."
+    }
+  ]
+}
