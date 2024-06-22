@@ -1,18 +1,27 @@
 {
   "data": [
     {
+      "id": 1,
       "name": "Monstera",
+      "title": "two green monstera leaves",
       "img": "monstera.jpg",
+      "height": "3–8 ft",
       "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama."
     },
     {
+      "id": 2,
       "name": "Philodendron Tree",
+      "title": "green philodendron tree",
       "img": "philodendron_tree.png",
+      "height": "15 ft",
       "description": "The tree philodendron (Philodendron bipinnatifidum) is a semi-woody shrub with a tree-like structure and large, glossy leaves."
     },
     {
+      "id": 3,
       "name": "Euphorbia Trigona",
+      "title": "green euphorbia trigona plant in a pot",
       "img": "euphorbia_trigona.png",
+      "height": "12 in - 6 ft",
       "description": "Euphorbia trigona, also known as the African Milk Tree or Good Luck Plant, is a slow-growing, branching succulent shrub that can grow up to 6 ft tall and 2 ft wide."
     }
   ]
