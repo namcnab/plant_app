@@ -43,7 +43,11 @@ function ResponsiveAppBar() {
       <AppBar position="static" color={"secondary"}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <GrassIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <img
+              src={require("../../src/assets/images/plants/monstera_transparent.png")}
+              alt="plant app"
+            />
+            {/* <GrassIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
             <Typography
               variant="h6"
               noWrap
@@ -96,7 +100,7 @@ function ResponsiveAppBar() {
                 ))}
               </Menu>
             </Box>
-            <GrassIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
             <Typography
               variant="h5"
               noWrap
@@ -115,6 +119,8 @@ function ResponsiveAppBar() {
             >
               PLANT APP
             </Typography>
+
+            {/* App Bar Options */}
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
@@ -127,6 +133,7 @@ function ResponsiveAppBar() {
               ))}
             </Box>
 
+            {/* Profile Management */}
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={() => {}} sx={{ p: 0 }}>
