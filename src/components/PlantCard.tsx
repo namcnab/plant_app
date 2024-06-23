@@ -31,7 +31,7 @@ function PlantCard(props: PlantCardProps) {
   };
 
   return (
-    <>
+    <Grid container justifyContent="center">
       {props.plants.data.map((item: any) => (
         <Grid item xs={3} sx={{ m: 2 }}>
           <Card sx={{ maxWidth: 345 }}>
@@ -59,7 +59,7 @@ function PlantCard(props: PlantCardProps) {
           </Card>
         </Grid>
       ))}
-    </>
+    </Grid>
   );
 }
 
