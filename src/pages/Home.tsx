@@ -1,11 +1,11 @@
 import PlantCard from "@components/PlantCard";
 import { Container, Box, Grid } from "@mui/material";
 
-import data from "config/data.json";
+import data from "config/plant_data.json";
 
 export default function Home() {
   return (
-    <Container maxWidth="xl">
+    <>
       <Grid container>
         <Grid item xs={12}>
           <Box sx={{ m: 2 }}>
@@ -16,9 +16,8 @@ export default function Home() {
           </Box>
         </Grid>
       </Grid>
-      <Grid container justifyContent="center">
-        <PlantCard plants={data} />
-      </Grid>
-    </Container>
+
+      <PlantCard plants={data} />
+    </>
   );
 }
