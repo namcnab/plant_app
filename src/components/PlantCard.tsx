@@ -13,8 +13,8 @@ import { useNavigate } from "react-router-dom";
 interface PlantData {
   data: {
     img: string;
-    title: string;
-    name: string;
+    imgAlt: string;
+    common_name: string;
     description: string;
   }[];
 }
@@ -38,7 +38,7 @@ function PlantCard(props: PlantCardProps) {
             <CardMedia
               sx={{ height: 250 }}
               image={require("assets/images/plants/" + item.img)}
-              title={item.title}
+              title={item.imgAlt}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
