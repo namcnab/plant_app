@@ -24,10 +24,7 @@ const customTheme = createTheme({
   },
 });
 
-const pages = [
-  { id: "glossary", value: "Glossary" },
-  { id: "care", value: "Plant Care" },
-];
+const pages = [{ id: "glossary", value: "Glossary" }];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
