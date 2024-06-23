@@ -46,6 +46,9 @@ function ResponsiveAppBar() {
             <img
               src={require("../../src/assets/images/plants/monstera_transparent.png")}
               alt="plant app"
+              style={{ cursor: "pointer" }}
+              onMouseOver={(e) => (e.currentTarget.style.cursor = "pointer")}
+              onClick={() => navigate("")}
             />
             {/* <GrassIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
             <Typography
@@ -53,6 +56,7 @@ function ResponsiveAppBar() {
               noWrap
               component="a"
               onClick={() => navigate("")}
+              onMouseOver={(e) => (e.currentTarget.style.cursor = "pointer")}
               sx={{
                 mr: 1,
                 display: { xs: "none", md: "flex" },
