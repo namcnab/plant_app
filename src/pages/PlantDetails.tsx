@@ -74,7 +74,15 @@ export default function PlantDetails() {
 
             <h2>Plant Care</h2>
             {Object.entries(plant.care).map(([key, value]) => (
-              <Accordion key={key}>
+              <Accordion
+                key={key}
+                sx={{
+                  color: "black", // Change text color inside the accordion
+                  marginBottom: "10px", // Add margin at the bottom of each accordion
+                  borderRadius: "8px", // Add rounded corners to the accordion
+                  border: "1px solid #D6E2F6", // Set border color and thickness
+                }}
+              >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1-content"
