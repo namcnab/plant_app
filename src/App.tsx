@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Glossary, Home, PlantCare, PlantDetails } from "@pages/index";
+import { Glossary, Home, PlantDetails } from "@pages/index";
 import { ResponsiveAppBar } from "@components/index";
 import { CustomContext } from "contexts/titleContext";
+import { Container } from "@mui/material";
+import Footer from "@components/Footer";
 
 function App() {
   function StateProvider({ children }) {
@@ -19,12 +21,14 @@ function App() {
     <StateProvider>
       <BrowserRouter>
         <ResponsiveAppBar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/glossary" element={<Glossary />}></Route>
-          <Route path="/care" element={<PlantCare />}></Route>
-          <Route path="/plant_details" element={<PlantDetails />}></Route>
-        </Routes>
+        <Container maxWidth="xl">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/glossary" element={<Glossary />}></Route>
+            <Route path="/plant_details" element={<PlantDetails />}></Route>
+          </Routes>
+        </Container>
+        <Footer />
       </BrowserRouter>
     </StateProvider>
   );
