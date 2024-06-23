@@ -5,22 +5,20 @@ import data from "config/data.json";
 
 export default function Home() {
   return (
-    <>
-      <Container maxWidth="xl">
-        <Grid container>
-          <Grid item xs={12}>
-            <Box sx={{ m: 2 }}>
-              <img
-                src={require("../../src/assets/images/home/home_page_header.png")}
-                alt="placeholder image"
-              />
-            </Box>
-          </Grid>
+    <Container maxWidth="xl">
+      <Grid container>
+        <Grid item xs={12}>
+          <Box sx={{ m: 2 }}>
+            <img
+              src={require("../../src/assets/images/home/home_page_header.png")}
+              alt="placeholder image"
+            />
+          </Box>
         </Grid>
-        <Grid container justifyContent="center">
-          <PlantCard plants={data} />
-        </Grid>
-      </Container>
-    </>
+      </Grid>
+      <Grid container justifyContent="center">
+        <PlantCard plants={data} />
+      </Grid>
+    </Container>
   );
 }
