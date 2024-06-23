@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import data from "config/data.json";
+import data from "config/plant_data.json";
 import {
   Accordion,
   AccordionDetails,
@@ -9,6 +9,7 @@ import {
   Divider,
   Grid,
 } from "@mui/material";
+import { capitalizeFirstLetter } from "../utils/format";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import WaterDropIcon from "@mui/icons-material/WaterDrop";
@@ -32,12 +33,8 @@ export default function PlantDetails() {
   const location = useLocation();
   const plant = data.data.find((item) => item.id === location.state.id);
 
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
   return (
-    <Container maxWidth="xl">
+    <>
       <Grid
         container
         direction="column"
@@ -99,6 +96,6 @@ export default function PlantDetails() {
           </Box>
         </Grid>
       </Grid>
-    </Container>
+    </>
   );
 }
