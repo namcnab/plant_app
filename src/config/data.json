@@ -2,27 +2,66 @@
   "data": [
     {
       "id": 1,
-      "name": "Monstera",
-      "title": "two green monstera leaves",
-      "img": "monstera.jpg",
+      "common_name": "Swiss Cheese Plant",
+      "scientific_name": "Monstera deliciosa",
+      "origin": "Southern Mexico and Guatemala",
+      "img": "monstera_deliciosa_2.jpg",
+      "imgAlt": "Swiss cheese plant in a pot",
+      "additionalImg": "monstera_deliciosa_1.png",
       "height": "3–8 ft",
-      "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama."
+      "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
+      "history": "The plant was first described by the Swiss botanist Carl Linnaeus in his book Species Plantarum in 1767. The species is named deliciosa because of the edible fruit it produces.",
+      "care": {
+        "light": "Bright light, no direct sun. If leaves on mature plants grow without holes or slits, give the plant more light.",
+        "water": "Water thoroughly and allow the top inch of soil to dry out between waterings. Keep soil barely moist in winter. Yellowing lower leaves are usually a sign of overwatering. Provide good drainage.",
+        "temperature": "Average to warm 65-85°F/18-29°C",
+        "humidity": "Average to high (at least 40% relative humidity).",
+        "soil": "Mix 1 part peat moss-based mix and 1 part sand or perlite for good drainage.",
+        "fertilizer": "Feed every 2 weeks spring through fall with a balanced liquid fertilizer diluted by half. Reduce feeding to monthly in winter.",
+        "propogation": "Take growing tip cuttings of a mature plant in spring and insert them into moist peat moss based potting mix."
+      }
     },
     {
       "id": 2,
-      "name": "Philodendron Tree",
-      "title": "green philodendron tree",
-      "img": "philodendron_tree.png",
+      "common_name": "Tree Philodendron",
+      "scientific_name": "Thaumatophyllum bipinnatifidum",
+      "origin": "Southern Brazil and Argentina",
+      "imgAlt": "Tree philodendron",
+      "img": "tree_philodendron_1.png",
+      "additionalImg": "tree_philodendron_1.png",
       "height": "15 ft",
-      "description": "The tree philodendron (Philodendron bipinnatifidum) is a semi-woody shrub with a tree-like structure and large, glossy leaves."
+      "description": "The tree philodendron (Philodendron bipinnatifidum) is a semi-woody shrub with a tree-like structure and large, glossy leaves.",
+      "history": "The tree philodendron, also known as *P. bipinnatifidum* or *P. selloum*, is native to southern Brazil and nearby areas of Argentina, Bolivia, and Paraguay. It's a member of the Araceae (Arum) family of climbing herbs that originated in tropical America. The plant's name comes from the Greek words philo, which means \"love\" or \"affection\", and dendron, which means \"tree\". ",
+      "care": {
+        "light": "Moderate to bright light. No direct sun, which can cause brown scorch marks on the leaves.",
+        "water": "Keep soil moist spring through fall. Allow surface to dry out between waterings in winter. Yellow leaves are caused by overwatering.",
+        "temperature": "Average to warm 65-80°F/18-27°C year-round. Split-leaf philodendron will tolerate a low of 60°F/16°C in winter.",
+        "humidity": "This rainforest native prefers relative humidity above 40%. Mist foliage occasionally. If your home is really dry, use a cool-mist room humidifier to boost moisture in the air around it. Brown leaf tips may be caused by dry air.",
+        "soil": "Peat moss-based potting mix.",
+        "fertilizer": "Feed monthly spring through fall with a balanced (such as 10-10-10 npk) water-soluble fertilizer diluted by half. Lack of nutrients may cause little or no growth and small leaves.",
+        "propogation": "Division. Cut through the thick roots with a serrated knife and pot up the plants separately."
+      }
     },
     {
       "id": 3,
-      "name": "Euphorbia Trigona",
-      "title": "green euphorbia trigona plant in a pot",
-      "img": "euphorbia_trigona.png",
+      "common_name": "African Milk Tree",
+      "scientific_name": "Euphorbia trigona",
+      "origin": "Western Africa",
+      "imgAlt": "African milk tree in a pot",
+      "img": "african_milk_tree_1.png",
+      "additionalImg": "african_milk_tree_1.png",
       "height": "12 in - 6 ft",
-      "description": "Euphorbia trigona, also known as the African Milk Tree or Good Luck Plant, is a slow-growing, branching succulent shrub that can grow up to 6 ft tall and 2 ft wide."
+      "description": "The African Milk Tree or Good Luck Plant, is a slow-growing, branching succulent shrub that can grow up to 6 ft tall and 2 ft wide.",
+      "history": "The African Milk Tree is native to tropical western Africa, where it grows in the rocky hillsides of Angola and Nigeria.",
+      "care": {
+        "light": "This plant prefers bright, indirect light indoors or partial sun outdoors, but can also tolerate full sun. If you put it in full sun, you should water it more. If the leaves start to wrinkle or shrivel, it could be a sign of too much light or not enough water.",
+        "water": "The African Milk Tree is drought-tolerant, so you should let the soil dry out between waterings. Overwatering can cause the leaves to turn yellow and droop, while underwatering can cause the tips to turn brown and wilt.",
+        "temperature": " The plant prefers warm temperatures between 65°F and 75°F (18°C and 24°C) and should be protected from temperatures below 50°F.",
+        "humidity": "Hot and humid conditions can cause disease, so you should try to keep the plant ventilated in the summer.",
+        "soil": "The soil should have good drainage.",
+        "fertilizer": "You can fertilize the plant monthly in the spring and summer.",
+        "propogation": "Africa Milk Trees can be propagated from cuttings. You should let the cuttings dry out for a few days before planting them in soil. The cuttings should be watered sparingly until they start to grow."
+      }
     }
   ]
 }
