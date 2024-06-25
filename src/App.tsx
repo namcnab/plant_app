@@ -21,7 +21,7 @@ function App() {
     <StateProvider>
       <BrowserRouter>
         <ResponsiveAppBar />
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ marginBottom: "3%" }}>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/glossary" element={<Glossary />}></Route>
