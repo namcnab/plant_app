@@ -22,6 +22,8 @@ export default function Footer() {
   return (
     <Box
       sx={{
+        mt: "2rem", // Set top margin to 2rem
+        bottom: 0,
         width: "100%",
         margin: "auto",
         display: "flex",
